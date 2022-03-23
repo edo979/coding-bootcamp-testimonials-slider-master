@@ -1,8 +1,10 @@
 .slider {
+  position: relative;
   width: max(375px, 80vw);
   max-width: 600px;
   height: 100vh;
   padding: 25px;
+  overflow: hidden;
 
   background-color: white;
 
@@ -14,4 +16,17 @@
   background-position: top 360px left 50%, bottom left, top 25px center;
 
   background-size: 60px, 75%, 320px;
+
+  &-slides {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+  }
+
+  &-slide {
+    width: calc(max(375px, 80vw) - 50px);
+    max-width: 600px;
+    outline: 1px solid red;
+  }
 }
