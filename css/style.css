@@ -79,7 +79,7 @@ body {
   place-content: center;
 }
 
-.slide-background {
+.slider {
   width: max(375px, 80vw);
   max-width: 600px;
   height: 100vh;

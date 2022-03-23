@@ -24,26 +24,33 @@
   </head>
   <link rel="stylesheet" href="css/style.css" />
   <body>
-    <div class="slide-background">
-      <div class="slide-image-containers">
-        <div class="flex slide-image">
-          <img src="/images/image-tanya.jpg" alt="person" />
-          <div class="slide-buttons">
-            <button class="btn btn-left"></button>
-            <button class="btn btn-right"></button>
+    <div class="slider">
+      <div class="slider-slides">
+        <div class="slider-slide">
+          <div class="slide-image-containers">
+            <img src="/images/image-tanya.jpg" alt="person" />
+          </div>
+          <div class="slide-text">
+            <p>
+              “ I’ve been interested in coding for a while but never taken the
+              jump, until now. I couldn’t recommend this course enough. I’m now
+              in the job of my dreams and so excited about the future. ”
+            </p>
+            <div class="flex slide-user-info">
+              <p>Tanya Sinclair</p>
+              <p>UX Engineer</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slide-text">
-        <p>
-          “ I’ve been interested in coding for a while but never taken the jump,
-          until now. I couldn’t recommend this course enough. I’m now in the job
-          of my dreams and so excited about the future. ”
-        </p>
-        <div class="flex slide-user-info">
-          <p>Tanya Sinclair</p>
-          <p>UX Engineer</p>
-        </div>
+
+      <div class="navigation">
+        <button class="btn btn-left" id="prev">
+          <img src="/images/icon-prev.svg" alt="" />
+        </button>
+        <button class="btn btn-right" id="next">
+          <img src="/images/icon-next.svg" alt="" />
+        </button>
       </div>
     </div>
 
