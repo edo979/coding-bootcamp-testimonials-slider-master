@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -57,37 +57,12 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
-*::before,
-*::after {
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-.hide {
-  display: none;
-}
-
-body {
-  background-color: black;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-}
-
-.slide-background {
-  width: max(325px, 80vw);
-  max-width: 600px;
-  height: 100vh;
-  background-color: white;
-  background-image: url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-position: top 10% left 10%, bottom left, center right;
-  background-size: 20%, 60%, 50%;
-}
-
-/*# sourceMappingURL=style.css.map */

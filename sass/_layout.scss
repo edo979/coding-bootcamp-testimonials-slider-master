@@ -1,0 +1,13 @@
+.hide {
+  display: none;
+}
+
+body {
+  background-color: black;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+@import 'components/slide-bg';

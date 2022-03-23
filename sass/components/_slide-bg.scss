@@ -1,0 +1,16 @@
+.slide-background {
+  width: max(325px, 80vw);
+  max-width: 600px;
+  height: 100vh;
+
+  background-color: white;
+
+  background-image: url(../images/pattern-quotes.svg),
+    url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
+
+  background-repeat: no-repeat;
+
+  background-position: top 10% left 10%, bottom left, center right;
+
+  background-size: 20%, 60%, 50%;
+}
