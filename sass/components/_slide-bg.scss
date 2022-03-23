@@ -2,6 +2,7 @@
   width: max(325px, 80vw);
   max-width: 600px;
   height: 100vh;
+  padding: 25px;
 
   background-color: white;
 
@@ -10,7 +11,7 @@
 
   background-repeat: no-repeat;
 
-  background-position: top 10% left 10%, bottom left, center right;
+  background-position: top 345px left 50%, bottom left, top 25px center;
 
-  background-size: 20%, 60%, 50%;
+  background-size: 55px, 75%, 280px 290px;
 }
