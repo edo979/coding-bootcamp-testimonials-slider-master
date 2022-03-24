@@ -4,7 +4,6 @@
   max-width: 600px;
   height: 100vh;
   padding: 25px;
-  //overflow: hidden;
 
   background-color: white;
 
@@ -13,13 +12,12 @@
 
   background-repeat: no-repeat;
 
-  background-position: top 360px left 50%, bottom left, top 25px center;
+  background-position: top 355px left 50%, bottom left, top 25px center;
 
-  background-size: 60px, 75%, 320px;
+  background-size: 55px, 75%, 320px;
 
   &-container {
     position: relative;
-    outline: 1px solid blue;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -30,15 +28,13 @@
     top: 0;
     left: 0;
     display: flex;
-    transition: left 2s ease-in-out;
+    transition: left 1s ease-in-out;
   }
 }
 
 .slide {
   width: calc(max(375px, 80vw) - 50px);
   max-width: 600px;
-
-  outline: 1px solid red;
 
   &-image-container {
     margin: 30px auto 30px;
@@ -50,5 +46,15 @@
 
     box-shadow: 0 35px 20px -10px rgba($color: $Dark-Blue, $alpha: 0.1),
       0 40px 25px -25px rgba($color: $Dark-Blue, $alpha: 0.18);
+  }
+
+  &-text {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  &-user-info {
+    margin-top: 15px;
   }
 }

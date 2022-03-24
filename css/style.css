@@ -76,6 +76,29 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+p {
+  color: #202046;
+  font-weight: 300;
+  font-size: 0.525rem;
+  line-height: 1.4;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: 700;
+}
+
+.fs-300 {
+  font-size: 0.455rem;
+}
+
+.text-normal {
+  color: #babacf;
+}
+
 .hide {
   display: none;
 }
@@ -97,12 +120,11 @@ body {
   background-color: white;
   background-image: url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg), url(../images/pattern-bg.svg);
   background-repeat: no-repeat;
-  background-position: top 360px left 50%, bottom left, top 25px center;
-  background-size: 60px, 75%, 320px;
+  background-position: top 355px left 50%, bottom left, top 25px center;
+  background-size: 55px, 75%, 320px;
 }
 .slider-container {
   position: relative;
-  outline: 1px solid blue;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -112,13 +134,12 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  transition: left 2s ease-in-out;
+  transition: left 1s ease-in-out;
 }
 
 .slide {
   width: calc(max(375px, 80vw) - 50px);
   max-width: 600px;
-  outline: 1px solid red;
 }
 .slide-image-container {
   margin: 30px auto 30px;
@@ -127,6 +148,14 @@ body {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 35px 20px -10px rgba(32, 32, 70, 0.1), 0 40px 25px -25px rgba(32, 32, 70, 0.18);
+}
+.slide-text {
+  padding: 10px;
+  padding-top: 40px;
+  text-align: center;
+}
+.slide-user-info {
+  margin-top: 15px;
 }
 
 .navigation {
