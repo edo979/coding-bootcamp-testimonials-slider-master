@@ -31,3 +31,13 @@ p {
 .text-normal {
   color: $Grayish-Blue-400;
 }
+
+@include mq {
+  p {
+    font-size: 1rem;
+  }
+
+  .fs-300 {
+    font-size: 0.675rem;
+  }
+}
