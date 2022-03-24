@@ -30,11 +30,30 @@
     display: flex;
     transition: left 1s ease-in-out;
   }
+
+  &-navigation {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    top: 285px;
+    left: 50%;
+    padding: 12px 10px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+
+    background-color: white;
+
+    .btn {
+      width: 20px;
+      border: none;
+      background-color: transparent;
+    }
+  }
 }
 
 .slide {
   width: calc(max(375px, 80vw) - 50px);
-  max-width: 600px;
+  max-width: calc(600px - 50px);
 
   &-image-container {
     margin: 30px auto 30px;
