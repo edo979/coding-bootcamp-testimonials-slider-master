@@ -52,7 +52,7 @@
 
 .slide {
   width: calc(max(375px, 80vw) - 50px);
-  max-width: calc(600px - 50px);
+  max-width: calc($break-point - 50px);
 
   &-image-container {
     margin: 30px auto 30px;
@@ -62,7 +62,7 @@
     border-radius: 5px;
     overflow: hidden;
 
-    box-shadow: 0 35px 20px -10px rgba($color: $Dark-Blue, $alpha: 0.1),
+    box-shadow: 0 45px 20px -20px rgba($color: $Dark-Blue, $alpha: 0.1),
       0 40px 25px -25px rgba($color: $Dark-Blue, $alpha: 0.18);
   }
 
@@ -81,7 +81,8 @@
   .slider {
     width: min(1440px, 95vw);
     height: 800px;
-    padding: 110px 170px 110px;
+    padding-block: 110px;
+    padding-inline: min(170px, 9.6vw);
 
     background-position: top 200px left 260px, bottom left, top 45px right 75px;
 
@@ -98,8 +99,9 @@
   }
 
   .slide {
-    width: calc(min(1440px, 95vw) - 340px);
-    max-width: calc(1440px - 340px);
+    $padding-inline: min(170px, 9.6vw);
+    width: calc(min(1440px, 95vw) - $padding-inline * 2);
+    max-width: calc(1440px - $padding-inline);
     height: 580px;
 
     display: grid;

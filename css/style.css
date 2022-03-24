@@ -99,7 +99,7 @@ p {
   color: #babacf;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1080px) {
   p {
     font-size: 1rem;
   }
@@ -163,7 +163,7 @@ body {
 
 .slide {
   width: calc(max(375px, 80vw) - 50px);
-  max-width: 550px;
+  max-width: 1030px;
 }
 .slide-image-container {
   margin: 30px auto 30px;
@@ -171,7 +171,7 @@ body {
   height: 250px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 35px 20px -10px rgba(32, 32, 70, 0.1), 0 40px 25px -25px rgba(32, 32, 70, 0.18);
+  box-shadow: 0 45px 20px -20px rgba(32, 32, 70, 0.1), 0 40px 25px -25px rgba(32, 32, 70, 0.18);
 }
 .slide-text {
   padding: 10px;
@@ -182,11 +182,12 @@ body {
   margin-top: 15px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1080px) {
   .slider {
     width: min(1440px, 95vw);
     height: 800px;
-    padding: 110px 170px 110px;
+    padding-block: 110px;
+    padding-inline: min(170px, 9.6vw);
     background-position: top 200px left 260px, bottom left, top 45px right 75px;
     background-size: 120px, 40%, 700px;
   }
@@ -199,8 +200,8 @@ body {
   }
 
   .slide {
-    width: calc(min(1440px, 95vw) - 340px);
-    max-width: 1100px;
+    width: calc(min(1440px, 95vw) - min(170px, 9.6vw) * 2);
+    max-width: calc(1440px - min(170px, 9.6vw));
     height: 580px;
     display: grid;
     grid-template-columns: 1fr 80px 460px;
