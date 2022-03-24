@@ -114,7 +114,6 @@ body {
 .slider {
   position: relative;
   width: max(375px, 80vw);
-  max-width: 600px;
   height: 100vh;
   padding: 25px;
   background-color: white;
@@ -172,6 +171,19 @@ body {
 }
 .slide-user-info {
   margin-top: 15px;
+}
+
+@media (min-width: 600px) {
+  .slider {
+    width: min(1440px, 85vw);
+    height: 800px;
+    padding: 110px 170px 150px;
+    background-position: top 210px left 260px, bottom left, top 45px right 75px;
+    background-size: 120px, 40%, 700px;
+  }
+  .slider-container {
+    outline: 1px solid red;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
