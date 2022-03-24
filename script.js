@@ -1,7 +1,7 @@
 const prevBtn = document.getElementById('prev'),
   nextBtn = document.getElementById('next'),
   slidesEl = document.querySelector('.slider-slides'),
-  numOfSlides = document.querySelectorAll('.slider-slide').length
+  numOfSlides = document.querySelectorAll('.slide').length
 
 let currentSlide = 0
 
